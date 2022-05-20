@@ -1,13 +1,25 @@
-import Top from "./Top";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card"
+import react from "react"
+import "./css/style.css"
+import data from "./data.js"
 
 function App() {
+  const cards = data.map(item => {
+    return (
+      <Card
+        key = {item.id}
+        item = {item}
+      />
+    )
+  })
   return (
-    <>
-      <Top />
-      <div className="App">
-        hi yo yo yo
+    <div>
+      <Navbar />
+      <div className="main--section">
+        {cards}
       </div>
-    </>
+    </div>
   );
 }
 

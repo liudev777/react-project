@@ -4,8 +4,10 @@ export default function Navbar() {
     return (
         <div>
             <nav>
-                <img src={globe} alt="globe image"/>
-                my travel journal
+                <img src={globe} alt="globe image" className="nav--image"/>
+                <div className="nav--title">
+                    my travel journal
+                </div>
             </nav>
         </div>
     );

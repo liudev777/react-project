@@ -14,6 +14,34 @@ nav {
     text-align: center;
     color: white;
     background-color: #F55A5A;
+    width: 550px;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.nav--image {
+    margin: 10px;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.nav--title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4608px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    align-self: center;
+}
+
+.main--section {
+    margin: 20px;
 }
 
 .card {
@@ -27,19 +55,55 @@ nav {
     height: 168px;
     object-fit: cover;
     border-radius: 5px;
+    align-self: center;
 }
 
 .card--stats {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.map--row {
+    display: flex;
+}
+
+.marker--logo {
+    align-self: center;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+}
+
+.map--url {
+    align-self: center;
+    margin: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    color: #918E9B;
+}
+
+.location--name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
 }
 
 .card--title {
     font-family: 'Inter';
+    font-style: bold;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .card--date {
@@ -58,6 +122,9 @@ nav {
     font-weight: 400;
     font-size: 10.24px;
     line-height: 150%;
+    width: 326px;
+    color: #2B283A;
+    background-color: white;
 }
 
 hr {

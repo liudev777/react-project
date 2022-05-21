@@ -1,4 +1,4 @@
-import locationLogo from "../images/Path.png"
+import locationLogo from "../images/marker.png"
 import data from "../data.js"
 
 
@@ -10,7 +10,7 @@ export default function Card(props) {
 
                 <div className="card--stats">
                     <div className="map--row">
-                        <img src={locationLogo} alt="location marker"/>
+                        <img src={locationLogo} alt="location marker" className="marker--logo"/>
                         <h5 className="location--name">{props.item.location}</h5>
                         <a href={props.item.googleMapsUrl} className="map--url">View on Google Maps</a>
                     </div>
@@ -28,7 +28,6 @@ export default function Card(props) {
                     </p>
                 </div>
             </div>
-            {/* {console.log(data.length)} */}
             {props.item.id < data.length && <hr/>}
         </>
     );
